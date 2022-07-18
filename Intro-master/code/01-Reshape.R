@@ -76,3 +76,4 @@ tidy2 <- readRDS("tidy.rds")
 
 write.csv(tidy, file = bzfile("tidy.csv.bz2"), row.names = FALSE)
 tidy3 <- read.csv("tidy.csv.bz2")
+# add some annotations
