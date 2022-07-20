@@ -96,9 +96,8 @@ How would you get the following output?
 Age <- c(31, 22, 19, 21)
 Name <- c("James", "Olivia", "Stella", "Mathew")
 Gender <- c("M", "F", "F", "M")
-StringNumObject <- data.frame(Age, Name, Gender)
-StringNumObject
-q2 <- NULL #Your final answer - should produce the final table
+q2 <- StringNumObject <- data.frame(Age, Name, Gender)
+StringNumObject #Your final answer - should produce the final table
 # END SOLUTION
 ```
 
@@ -116,7 +115,7 @@ c(34, 56, NA, 87, NA, 4, 77, NA, 21, NA, 39)
 # BEGIN SOLUTION
 q3 <- c(34, 56, NA, 87, NA, 4, 77, NA, 21, NA, 39)
 sum(is.na(q3))
-q3 <- 4 #Your final answer
+q3 <- sum(is.na(q3)) #Your final answer
 # END SOLUTION
 ```
 
@@ -129,7 +128,7 @@ If `x <- c("ss", "aa", "ff", "kk", "bb")`, what will be the third value in the i
 # BEGIN SOLUTION
 x <- c("ss", "aa", "ff", "kk", "bb")
 x[c(3)]
-q4 <- "ff" #Your final answer
+q4 <- x[c(3)] #Your final answer
 # END SOLUTION
 ```
 
@@ -157,7 +156,7 @@ Write an `R` expression that will return the positions of 3 and 7 in the vector 
 x <- c(2, 3, 8, 2, 7, 1, 9, 9, 3, 2, 7)
 which(sapply(x, function(x) "3" %in% x))
 which(sapply(x, function(x) "7" %in% x))
-q6 <- NULL #Your final answer
+q6 <- c(which(sapply(x, function(x) "3" %in% x)), which(sapply(x, function(x) "7" %in% x))) #Your final answer
 # END SOLUTION
 ```
 
@@ -170,7 +169,7 @@ If `a <- list ("x"=2, "y"=15, "z"=84)`, how would you estimate the sum of all el
 # BEGIN SOLUTION
 a <- list ("x"=2, "y"=15, "z"=84)
 sum(unlist(a))
-q7 <- 101 #Your final answer
+q7 <- sum(unlist(a)) #Your final answer
 # END SOLUTION
 ```
 
@@ -183,7 +182,7 @@ Let `x <- list(a=5:10, c="Ab", d="AA")`, write an R statement to add a new item 
 x <- list(a=5:10, c="Ab", d="AA")
 z = "NewItem"
 append(x, z)
-q8 <- NULL #Your final answer
+q8 <- append(x, z) #Your final answer
 # END SOLUTION
 ```
 
@@ -198,7 +197,7 @@ x <- 3201
 in_to_cm <- function(x) x * 2.54
 in_to_cm(c(3201))
 q9.function <- function(x) x * 2.54 #Your function answer
-q9 <- 8130.54 #Your final answer
+q9 <- q9.function <- function(x) x * 2.54 #Your final answer
 # END SOLUTION
 ```
 
@@ -224,7 +223,7 @@ totalVd <- c(5, 7, 20, 1, 0, 0, 12, 4, 2, 2, 2, 4, 5, 6, 7, 10, 4)
 sum(totalVd)
 less4Vd <- c(5, 7, 20, 1, 0, 0, 12, 4, 2, 2, 2, 4, 5, 6, 7, 10, 4)
 sum(less4Vd < 4)
-q10 <- list("totalInd"=17, "totalVd"=91, "less4Vd"=6) ##Your final answer
+q10 <- c((length(totalInd)), (sum(totalVd)), (sum(less4Vd < 4))) ##Your final answer
 # END SOLUTION
 ```
 
@@ -239,17 +238,15 @@ Age <- c(31, 22, 19, 21)
 Name <- c("James", "Olivia", "Stella", "Mathew")
 Gender <- c("M", "F", "F", "M")
 df1 <- data.frame(Age, Name, Gender)
-df1$Gender01 = ifelse(df1$Gender == "M", "0" , "1")
-df1
-for (i in 1:4){
+q11.1 <- (df1$Gender01 = ifelse(df1$Gender == "M", "0" , "1"))
+df1 ##Your final answer
+q11.2 <- (for (i in 1:4){
   if (df1$Gender[i] == "M"){
     (df1$Gender01[i] <- c("0"))}
   if (df1$Gender[i] == "F"){
     (df1$Gender01[i] <- c("1"))}
-}
-df1
-q11.1 <- NULL ##Your final answer
-q11.2 <- NULL ##Your final answer
+})
+df1 ##Your final answer
 # END SOLUTION
 ```
 
@@ -264,7 +261,7 @@ The points below relate to the GitHub component reviewed this week. Please follo
 
 ```{r}
 # BEGIN SOLUTION
-q12.2 <- NULL # https://github.com/SophieFournier/sfournier22 ##paste your link here (as a string that must include the pattern github.com)
+q12.2 <- "https://github.com/SophieFournier/sfournier22" ##paste your link here (as a string that must include the pattern github.com)
 # END SOLUTION
 ```
 
@@ -272,7 +269,7 @@ q12.2 <- NULL # https://github.com/SophieFournier/sfournier22 ##paste your link 
 
 ```{r}
 # BEGIN SOLUTION
-q12.3 <- NULL # https://github.com/SophieFournier-DM523 ##paste your link here (as a string that must include the pattern github.com)
+q12.3 <- "https://github.com/SophieFournier-DM523" ##paste your link here (as a string that must include the pattern github.com)
 # END SOLUTION
 ```
 
@@ -281,7 +278,7 @@ q12.3 <- NULL # https://github.com/SophieFournier-DM523 ##paste your link here (
 
 ```{r}
 # BEGIN SOLUTION
-q12.4 <- NULL # https://github.com/SophieFournier-DM523/sfournier22 ##paste your link here (as a string that must include the pattern github.com)
+q12.4 <- "https://github.com/SophieFournier-DM523/sfournier22" ##paste your link here (as a string that must include the pattern github.com)
 # END SOLUTION
 ```
 
@@ -290,7 +287,7 @@ q12.4 <- NULL # https://github.com/SophieFournier-DM523/sfournier22 ##paste your
 
 ```{r}
 # BEGIN SOLUTION
-q12.5 <- NULL # https://github.com/SophieFournier-DM523/sfournier22/blob/main/Intro-master/code/01-Reshape.R ##paste your link here (as a string that must include the pattern github.com)
+q12.5 <- "https://github.com/SophieFournier-DM523/sfournier22/blob/main/Intro-master/code/01-Reshape.R" ##paste your link here (as a string that must include the pattern github.com)
 # END SOLUTION
 ```
 
@@ -299,7 +296,7 @@ q12.5 <- NULL # https://github.com/SophieFournier-DM523/sfournier22/blob/main/In
 
 ```{r}
 # BEGIN SOLUTION
-q12.6 <- NULL # https://github.com/SophieFournier/sfournier22/pull/1 ##paste your link here (as a string that must include the pattern github.com)
+q12.6 <- "https://github.com/SophieFournier/sfournier22/pull/1" ##paste your link here (as a string that must include the pattern github.com)
 # END SOLUTION
 ```
 

@@ -11,26 +11,26 @@ The following “feedback” will update each time you render your homework.
 
     <U+2705> Question 1 - Correct!
     <U+274C> Question 2 - Potentially incorrect
-    <U+274C> Question 3 - Potentially incorrect
+    <U+2705> Question 3 - Correct!
     <U+274C> Question 4 - Potentially incorrect
     <U+2705> Question 5 - Correct!
     <U+274C> Question 6 - Potentially incorrect
     <U+2705> Question 7 - Correct!
     <U+274C> Question 8 - Potentially incorrect
-    <U+2705> Question 9 - Correct!
+    <U+274C> Question 9 - Potentially incorrect
     <U+274C> Question 10 - Potentially incorrect
     <U+274C> Question 11.1 - Potentially incorrect
     <U+274C> Question 11.2 - Potentially incorrect
-    <U+274C> Question 12.2 - Provide a link
-    <U+274C> Question 12.3 - Provide a link
-    <U+274C> Question 12.4 - Provide a link
-    <U+274C> Question 12.5 - Provide a link
-    <U+274C> Question 12.6 - Provide a link
+    <U+2705> Question 12.2 - Looks fine!
+    <U+2705> Question 12.3 - Looks fine!
+    <U+2705> Question 12.4 - Looks fine!
+    <U+2705> Question 12.5 - Looks fine!
+    <U+2705> Question 12.6 - Looks fine!
 
 
-       <U+231B> Auto-grade 23.53 %,  2.35 / 10 points
+       <U+231B> Auto-grade 52.94 %,  5.29 / 10 points
 
-    Updated: 2022-07-17 20:37:23 MDT
+    Updated: 2022-07-19 20:29:47 MDT
 
 ### Objectives
 
